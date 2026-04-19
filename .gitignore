@@ -2,9 +2,12 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/bin-int/Debug-x64/Raycaster
-/bin/Debug-x64/Raycaster
-/Raycaster/Raycaster.vcxproj
-/Raycaster/Raycaster.vcxproj.filters
-/Raycaster/Raycaster.vcxproj.user
-/.vs/Raycaster.slnx
+bin/
+bin-int/
+
+*.sln
+*.vs
+*.bat
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
