@@ -6,6 +6,7 @@ bin/
 bin-int/
 
 *.sln
+*.slnx
 *.vs
 *.bat
 *.vcxproj
