@@ -30,6 +30,7 @@ The project is currently tested on windows only.
 
 ### Steps
 1. Clone the repo
-2. Run `vendor\bin\premake\premake5.exe vs2022 or vs2026`
-3. Open .sln file
-4. Build and run
+2. Open cmd in the root folder
+3. Run `vendor\premake\premake5.exe vs2022 or vs2026`
+4. Open .sln file
+5. Build and run
