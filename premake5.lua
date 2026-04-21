@@ -28,31 +28,13 @@ project "Raycaster"
         "vendor/raylib/include"
     }
 
-    libdirs
-    {
-        "vendor/raylib/lib"
-    }
-
     filter "system:windows"
-        links
-        {
-            "raylib",
-            "opengl32",
-            "gdi32",
-            "winmm"
-        }
+        libdirs { "vendor/raylib/lib/win" }
+        links { "raylib", "opengl32", "gdi32", "winmm" }
 
     filter "system:linux"
-        links
-        {
-            "raylib",
-            "GL",
-            "m",
-            "pthread",
-            "dl",
-            "rt",
-            "X11"
-        }
+        libdirs { "vendor/raylib/lib/linux" }
+        links { "raylib", "GL", "m", "pthread", "dl", "rt", "X11" }
 
     filter "configurations:Debug"
         symbols "On"
