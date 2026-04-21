@@ -29,7 +29,7 @@ project "Raycaster"
     }
 
     filter "system:windows"
-        libdirs { "vendor/raylib/lib/win" }
+        libdirs { "vendor/raylib/lib/windows" }
         links { "raylib", "opengl32", "gdi32", "winmm" }
 
     filter "system:linux"
