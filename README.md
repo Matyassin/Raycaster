@@ -51,9 +51,13 @@ The predecessor was written in Java — performance peaked at ~10k rays. We don'
 ```bash
    vendor/premake/linux/premake5 gmake
 ```
-5. Build *(only specify `CXX` and `CC` if your default compiler is not C++23 compatible)*:
+5. Build *(only specify `CXX` if your default compiler is not C++23 compatible)*:
 ```bash
    make CXX=g++-14
+```
+or:
+```bash
+   make
 ```
 6. Run:
 ```bash
