@@ -22,15 +22,39 @@ The predecessor was written in Java — performance peaked at ~10k rays. We don'
 | End | Set ray count to maximum |
 | F | Toggle borderless fullscreen |
 
-## Building the project
-The project is currently tested on windows only.
+## Building the Project
 
 ### Prerequisites
-- C++23 compiler (MSVC / GCC / Clang...)
+- **Windows:** MSVC (Visual Studio 2022 or 2026)
+- **Linux:** C++23 compatible compiler (e.g. GCC 14+)
 
-### Steps
+---
+
+### Windows MSVC
 1. Clone the repo
 2. Open cmd in the root folder
-3. Run `vendor\premake\premake5.exe vs2022 or vs2026`
-4. Open .sln file
+3. Run `vendor\premake\windows\premake5.exe vs2022` or `vs2026`
+4. Open the `.sln` file in Visual Studio
 5. Build and run
+
+---
+
+### Linux
+1. Clone the repo
+2. Open a terminal in the root folder
+3. Give the current user executable permission on the premake binary:
+```bash
+   chmod +x vendor/premake/linux/premake5
+```
+4. Generate makefiles:
+```bash
+   vendor/premake/linux/premake5 gmake
+```
+5. Build *(only specify `CXX` and `CC` if your default compiler is not C++23 compatible)*:
+```bash
+   make CXX=g++-14
+```
+6. Run:
+```bash
+   bin/Debug-linux-x86_64/Raycaster/Raycaster
+```
