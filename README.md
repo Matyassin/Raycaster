@@ -25,6 +25,7 @@ The predecessor was written in Java — performance peaked at ~10k rays. We don'
 ## Building the Project
 
 ### Prerequisites
+- 64 bit OS
 - **Windows:** MSVC (Visual Studio 2022 or 2026)
 - **Linux:** C++23 compatible compiler (e.g. GCC 14+)
 
